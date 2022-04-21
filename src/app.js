@@ -84,8 +84,7 @@ const page = () => {
         displayOneArea.innerHTML = ``
       })
     })
-
-
   }
+}
 
 
