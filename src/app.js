@@ -52,3 +52,16 @@ const contactsList = [
 ]
 
 // Your code goes here
+// **load contacts 5 points**
+
+// Add functions to the app.js file that will create a card for every contact in the contact list provided in app.js.
+// Although you don’t have to add functionality to create a new contact, your functions should be 
+// able to load a variable number of contacts. So if a new contact were added, your code would still create and display 
+// cards for all of the contacts. 
+// contact cards should be added to the section with an id of “display_all_contacts”.
+// Make sure to add consistent git messages
+
+
+
+const display_single_contact = document.getElementById('display_single_contact')
+const display_all_contacts = document.getElementById('display_all_contacts')
