@@ -1,9 +1,9 @@
 :root {
   --white: #f6f8f7;
-  --grey:  #494a5c;
+  --grey: #494a5c;
   --black: #2a292f;
-  --blue:  #6aaeca;
-  --red:   #e88e66;
+  --blue: #6aaeca;
+  --red: #e88e66;
 }
 
 /* CSS reset */
@@ -66,6 +66,9 @@ header a:hover {
 }
 
 main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
 }
 
