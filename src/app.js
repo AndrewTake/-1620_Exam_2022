@@ -67,6 +67,7 @@ const displayAllContacts = () => {
   displayAllArea.innerHTML = display
 }
 
+page()
 
 const page = () => {
   displayAllContacts()
@@ -76,11 +77,15 @@ const page = () => {
     const d = document.getElementById(contactsList[i].ID)
     d.addEventListener('click', () => {
       displayOneArea.innerHTML = `<div class= 'individual_contact'><img src='img/${contactsList[i].image}' />
-      <h2>${contactsList[i].name}</h2><h3>${contactsList[i].phone}</h3><h3>${contactsList[i].email}</h3></div>`
+      <h2>${contactsList[i].name}</h2><h3>${contactsList[i].phone}</h3><h3>${contactsList[i].email}</h3><button id= 'close'>close<button></div>`
+
+      const closebtn = document.getElementById('close')
+      closebtn.addEventListener('click', () => {
+        displayOneArea.innerHTML = ``
+      })
     })
+
+
   }
 
 
-}
-
-page()
